@@ -7,13 +7,13 @@ const Navbar = () => {
   return (
     <div className="w-full h-full mx-auto flex justify-between items-center font-titleFont">
       <div>
-        <img src={logo} alt="logo" />
+        <img width="60px" src={logo} alt="logo" />
       </div>
       <div>
         <ul className="flex items-center gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
-              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
+              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-yellow-600"
               key={_id}
             ><Link
             activeClass="active"
