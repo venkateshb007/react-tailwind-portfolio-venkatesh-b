@@ -1,15 +1,16 @@
 import React from 'react'
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Media from './Media';
 
-const Banner = () => {
-  const [text] = useTypewriter({
-    words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
-    loop: true,
-    typeSpeed: 20,
-    deleteSpeed: 10,
-    delaySpeed: 2000,
-  });
+const LeftBanner = () => {
+    const [text] = useTypewriter({
+        words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+        loop: true,
+        typeSpeed: 20,
+        deleteSpeed: 10,
+        delaySpeed: 2000,
+      });
+
   return (
     <section id='home' className='w-full py-20 items-center flex border-b-[1px] font-titleFont border-b-black'>
        <div className='w-1/2 flex flex-col gap-10'>
@@ -30,18 +31,7 @@ const Banner = () => {
             </p>
         </div>
         <div>
-          Find me in
-          <div className="flex gap-4">
-            <span className="bannerIcon">
-              <FaFacebookF/>
-            </span>
-            <span className="bannerIcon">
-              <FaTwitter/>
-            </span>
-            <span className="bannerIcon">
-              <FaLinkedinIn/>
-            </span>
-          </div>
+          FIND ME IN
         </div>
        </div>
        <div className='w-1/2'></div>
@@ -49,4 +39,4 @@ const Banner = () => {
   )
 }
 
-export default Banner;
+export default LeftBanner

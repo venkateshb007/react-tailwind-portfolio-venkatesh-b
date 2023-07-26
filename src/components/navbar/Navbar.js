@@ -5,27 +5,28 @@ import { navLinksdata } from "../../constants";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-full mx-auto flex justify-between items-center font-titleFont">
+    <div className="w-full h-20 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
-        <img width="60px" src={logo} alt="logo" />
+        <img width="50px" src={logo} alt="logo" />
       </div>
       <div>
         <ul className="flex items-center gap-10">
           {navLinksdata.map(({ _id, title, link }) => (
             <li
-              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-yellow-600"
+              className="text-base font-normal text-gray-400 tracking-wide cursor-pointer hover:text-designColor duration-300"
               key={_id}
-            ><Link
-            activeClass="active"
-            to={link}
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            {title}
-          </Link>
-          </li>
+            >
+              <Link
+                activeClass="active"
+                to={link}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {title}
+              </Link>
+            </li>
           ))}
         </ul>
       </div>
