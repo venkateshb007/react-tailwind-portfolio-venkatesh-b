@@ -1,5 +1,5 @@
 import logo from "./images/Venkatesha (7).png";
-import bannerImg from "./images/bannerImg.png";
+import bannerImg from "./images/profileVenky.png";
 import projectOne from "./images/projects/projectOne.jpg";
 import projectTwo from "./images/projects/projectTwo.jpg";
 import projectThree from "./images/projects/projectThree.jpeg";
